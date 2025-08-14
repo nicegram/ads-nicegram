@@ -1,0 +1,91 @@
+html,
+body {
+  background-color: transparent;
+  color: var(--tg-theme-text-color);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.task {
+  --adsgram-task-button-width: 60px;
+  --adsgram-task-font-size: 16px;
+  --adsgram-task-icon-border-radius: 30px;
+  --adsgram-task-icon-size: 60px;
+  --adsgram-task-icon-title-gap: 10px;
+
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 500;
+  padding: 8px 10px;
+  width: 100%;
+}
+
+.task__reward {
+  color: var(--tg-theme-subtitle-text-color);
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: -0.01px;
+}
+
+.task__button {
+  background-color: var(--tg-theme-button-color);
+  border-radius: 1000px;
+  box-sizing: border-box;
+  color: var(--tg-theme-button-text-color);
+  font-size: 15px;
+  font-weight: 600;
+  max-width: 100%;
+  padding: 4.5px 12px;
+  white-space: nowrap;
+}
+
+/* ad-placeholder */
+
+.ad-placeholder {
+  align-items: flex-start;
+  cursor: default;
+  display: none;
+  gap: 10px;
+  max-width: 100%;
+  padding: 8px 10px;
+  text-decoration: none;
+}
+
+.ad-placeholder__content {
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.ad-placeholder__image {
+  border-radius: 50%;
+  flex-shrink: 0;
+  height: 60px;
+  object-fit: cover;
+  width: 60px;
+}
+
+.ad-placeholder__title {
+  color: var(--tg-theme-text-color);
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 0 2px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ad-placeholder__subtitle {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color: var(--tg-theme-subtitle-text-color);
+  display: -webkit-box;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+  overflow: hidden;
+}
